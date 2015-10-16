@@ -1,0 +1,99 @@
+{
+    "@": {
+        "$": [
+            "./stack/0.VirtualCloud.Genesis.ccjson",
+            [
+                "./stack/0.ccjson",
+                {
+                    "skin": ""
+                }
+            ],
+            "./stack/0.PINF.Genesis.ccjson",
+            "./stack/0.PINF.Genesis.to.ccjson",
+            "./stack/0.FireWidgets.ccjson"
+        ]
+    },
+    "@0.pinf.genesis.Stack": {
+        "${{ARG.namespace}}.0.pinf.genesis.Stack": {
+            "label": "{{ARG.label}}",
+            "invitePage": "/"
+        }
+    },
+    "@responder.server": {
+        "$server": {
+            "${{ARG.namespace}}.routes.routes()->routes0/{{ARG.namespace}}": {
+                "match": "^{{ARG.subUri}}(/.*)"
+            }
+        }
+    },
+    "@static.fs": {
+        "${{ARG.namespace}}.static.fs.cache": {
+            "basePath": "{{ARG.stackBasePath}}/.cache"
+        },
+        "${{ARG.namespace}}.static.fs.www": {
+            "basePath": "{{__DIRNAME__}}/../www"
+        },
+        "${{ARG.namespace}}.static.fs.www.dist": {
+            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+        },
+        "${{ARG.namespace}}.static.fs.components": {
+            "basePath": "{{ARG.stackBasePath}}/Components"
+        },
+        "${{ARG.namespace}}.static.fs.components.dist": {
+            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+        },
+        "${{ARG.namespace}}.static.fs.skin": {
+            "basePath": "{{ARG.stackBasePath}}/Skin"
+        },
+        "${{ARG.namespace}}.static.fs.skin.dist": {
+            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+        },
+        "${{ARG.namespace}}.static.fs.data.pages": {
+            "basePath": "{{ARG.stackBasePath}}/Pages"
+        },
+        "${{ARG.namespace}}.static.fs.data.collections": {
+            "basePath": "{{ARG.stackBasePath}}/Collections"
+        },
+        "${{ARG.namespace}}.static.fs.data.collections.dist": {
+            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+        }
+    },
+    "@session.express.fs": {
+        "${{ARG.namespace}}.session.express.fs": {
+    		"$0.profile.virtualcloud.hashForAspect()->secret": {
+    		    "aspect": "{{ARG.namespace}}.session"
+    		},
+    		"$0.profile.virtualcloud.hashForAspect()->store/secret": {
+    		    "aspect": "{{ARG.namespace}}.session.store"
+    		},
+            "${{ARG.namespace}}.cache.fs.path()->store/basePath": {
+                "namespace": "sessions"
+            },
+		    "name": "{{ARG.namespace}}"
+        }
+    },
+    "@auth.passport": {
+        "${{ARG.namespace}}.auth": {
+            "forceAuthenticated": true
+        }
+    },
+    "@boundary.github": {
+        "${{ARG.namespace}}.boundary.github": {
+            "forceAuthorized": true
+        }
+    },
+    "@page.express": {
+        "${{ARG.namespace}}.page.server": {
+            "pages": {
+                "defaultPath": "/"
+            },
+            "client": {
+                "context": {
+                    "page": {
+                        "path": "/"
+                    }
+                }
+            }
+        }
+    }
+}
