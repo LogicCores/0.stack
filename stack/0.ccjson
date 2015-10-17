@@ -1,9 +1,4 @@
 {
-    "@": {
-        "$": [
-            "../../stack.mixin.ccjson"
-        ]
-    },
     "@context": {
         "${{ARG.namespace}}.context.server": {
             "namespace": "${{ARG.namespace}}",

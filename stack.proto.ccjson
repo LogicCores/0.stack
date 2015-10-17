@@ -1,6 +1,7 @@
 {
     "@": {
         "$": [
+            "../stack.mixin.ccjson",
             "./stack/0.VirtualCloud.Genesis.ccjson",
             [
                 "./stack/0.ccjson",
