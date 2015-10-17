@@ -22,7 +22,7 @@
     },
     "@responder.server": {
         "$server": {
-            "${{ARG.namespace}}.routes.routes()->routes0/{{ARG.namespace}}": {
+            "${{ARG.namespace}}.routes.routes()->routes{{ARG.stackIndex}}/{{ARG.namespace}}": {
                 "match": "^{{ARG.subUri}}(/.*)"
             }
         }
@@ -59,6 +59,23 @@
             "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
         }
     },
+    "@invite.cookie": {
+        "$0.invite.cookie": {
+    		"$0.profile.virtualcloud.hashForAspect()->token": {
+    		    "aspect": "invite"
+    		}
+        }
+    },
+    "@session.express.fs": {
+        "${{ARG.namespace}}.session.express.fs": {
+    		"$0.profile.virtualcloud.hashForAspect()->secret": {
+    		    "aspect": "dev.session"
+    		},
+    		"$0.profile.virtualcloud.hashForAspect()->store/secret": {
+    		    "aspect": "dev.session.store"
+    		}
+        }
+    },    
     "@session.express.fs": {
         "${{ARG.namespace}}.session.express.fs": {
     		"$0.profile.virtualcloud.hashForAspect()->secret": {
