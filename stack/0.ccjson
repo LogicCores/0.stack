@@ -191,8 +191,8 @@
         "${{ARG.namespace}}.export.sm.hoist.VisualComponents.semantic-ui": {
             "${{ARG.namespace}}.context.server.api()->context": {},
             "sourceBaseSubUrl": "/cores/skin/for/sm.hoist.VisualComponents",
-            "${{ARG.namespace}}.cache.fs.path()->config/target/path": {
-                "namespace": "skin/components/{{ARG.namespace}}"
+            "${{ARG.namespace}}.static.fs.skin.dist.path()->config/target/path": {
+                "namespace": "skin"
             }
         }
     },

@@ -35,19 +35,19 @@
             "basePath": "{{__DIRNAME__}}/../www"
         },
         "${{ARG.namespace}}.static.fs.www.dist": {
-            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+            "basePath": "{{ARG.stackBasePath}}/_exports/www/dist"
         },
         "${{ARG.namespace}}.static.fs.components": {
             "basePath": "{{ARG.stackBasePath}}/Components"
         },
         "${{ARG.namespace}}.static.fs.components.dist": {
-            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+            "basePath": "{{ARG.stackBasePath}}/_exports/www/dist"
         },
         "${{ARG.namespace}}.static.fs.skin": {
             "basePath": "{{ARG.stackBasePath}}/Skin"
         },
         "${{ARG.namespace}}.static.fs.skin.dist": {
-            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+            "basePath": "{{ARG.stackBasePath}}/_exports/www/dist"
         },
         "${{ARG.namespace}}.static.fs.data.pages": {
             "basePath": "{{ARG.stackBasePath}}/Pages"
@@ -56,7 +56,7 @@
             "basePath": "{{ARG.stackBasePath}}/Collections"
         },
         "${{ARG.namespace}}.static.fs.data.collections.dist": {
-            "basePath": "{{ARG.stackBasePath}}/.cache/www/dist"
+            "basePath": "{{ARG.stackBasePath}}/_exports/www/dist"
         }
     },
     "@invite.cookie": {
