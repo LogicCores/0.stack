@@ -20,6 +20,15 @@
         },
         "responder.0.FireWidgets": {
             "alwaysRebuild": false
+        },
+        "page.express": {
+            "client": {
+                "context": {
+                    "component": {
+                        "alwaysReload": false
+                    }
+                }
+            }
         }
     }
 }
