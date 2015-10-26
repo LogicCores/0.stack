@@ -130,6 +130,7 @@
     },
     "@skin.sm.hoist.VisualComponents": {
         "${{ARG.namespace}}.skin.sm.hoist.VisualComponents": {
+            "${{ARG.namespace}}.context.server.api()->context": {},
             "${{ARG.namespace}}.static.fs.skin.path()->basePath": {
                 "namespace": "{{ARG.skin}}"
             }
@@ -174,6 +175,7 @@
     },
     "@export.webpack": {
         "${{ARG.namespace}}.export.webpack.skin": {
+            "subUri": "{{ARG.subUri}}",
             "${{ARG.namespace}}.static.fs.skin.path()->basePath": {
                 "namespace": "{{ARG.skin}}"
             },
