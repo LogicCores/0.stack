@@ -90,6 +90,13 @@
             }
        }
     },
+    "@data.io.orchestrate": {
+        "${{ARG.namespace}}.data.io.orchestrate": {
+            "${{ARG.namespace}}.context.server.api()->context": {
+                "adapter": "data.io.orchestrate"
+            }
+       }
+    },
     "@data.bookshelf": {
         "${{ARG.namespace}}.data.bookshelf": {
             "${{ARG.namespace}}.context.server.api()->context": {
