@@ -26,6 +26,9 @@
                 "context": {
                     "component": {
                         "alwaysReload": false
+                    },
+                    "page": {
+                        "alwaysReload": false
                     }
                 }
             }
