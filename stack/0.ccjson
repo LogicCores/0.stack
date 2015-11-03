@@ -300,10 +300,15 @@
             "${{ARG.namespace}}.skin.semantic-ui.app()->impl": {
             }
         },
+        "${{ARG.namespace}}.routes.static": {
+            "#": "register",
+            "namespace": "{{ARG.namespace}}",
+            "match": "^(/.+)$"
+        },
         "${{ARG.namespace}}.routes.static.send.semantic-ui": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^(.+\\.(?:css|png|jpg|jpeg|ico|font|svg))$",
+            "match": "^(.+\\.(?:css|png|jpg|jpeg|ico|font|svg|woff|woff2|ttf))$",
             "${{ARG.namespace}}.static.send.semantic-ui.app()->impl": {
             }
         },
