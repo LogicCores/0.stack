@@ -12,7 +12,10 @@
             "./stack/0.PINF.Genesis.ccjson",
             "./stack/0.PINF.Genesis.to.ccjson",
             "./stack/0.FireWidgets.ccjson"
-        ]
+        ],
+        "invite.cookie": {
+            "forceInvited": true
+        }
     },
     "@0.pinf.genesis.Stack": {
         "${{ARG.namespace}}.0.pinf.genesis.Stack": {
