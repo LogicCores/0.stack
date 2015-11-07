@@ -360,7 +360,7 @@
         "${{ARG.namespace}}.routes.apis": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^(/.+)$",
+            "match": "^(/.*)$",
             "methods": "*"
         },
         "${{ARG.namespace}}.routes.responder": {
@@ -369,19 +369,25 @@
             "match": "^/cores/responder(/.+)$",
             "methods": "*"
         },
+        "${{ARG.namespace}}.routes.skin.sm.hoist.VisualComponents": {
+            "#": "register",
+            "namespace": "{{ARG.namespace}}",
+            "match": "^/cores/skin/for/sm.hoist.VisualComponents(/.+\\.html?)$",
+            "${{ARG.namespace}}.skin.sm.hoist.VisualComponents.app()->impl": {
+            }
+        },
+        "${{ARG.namespace}}.routes.pages": {
+            "#": "register",
+            "namespace": "{{ARG.namespace}}",
+            "match": "^(/.*)$",
+            "methods": "*"
+        },
         "${{ARG.namespace}}.routes.transform.marked": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
             "match": "^(/.*\\.md\\.htm)$",
             "${{ARG.namespace}}.transform.marked.app()->impl": {
                 "usePageContext": true
-            }
-        },
-        "${{ARG.namespace}}.routes.skin.sm.hoist.VisualComponents": {
-            "#": "register",
-            "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/skin/for/sm.hoist.VisualComponents(/.+\\.html?)$",
-            "${{ARG.namespace}}.skin.sm.hoist.VisualComponents.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.export.sm.hoist.VisualComponents.semantic-ui": {
