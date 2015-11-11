@@ -1,4 +1,9 @@
 {
+    "@env": {
+        "$0.env": {
+            "mode": "development"
+        }
+    },
     "@context": {
         "${{ARG.namespace}}.context.server": {
             "namespace": "${{ARG.namespace}}",
@@ -15,7 +20,9 @@
                         "data.mapper": "ccjson.record.mapper"
                     }
                 }
-            }
+            },
+            "$0.env.getConfig()->aspects/env/config": {},
+            "$0.services.getServerConfig()->aspects/service/config": {}
         }
     },
     "@cache.fs": {
@@ -82,6 +89,8 @@
                 "debug": true,
                 "client": "pg"
             },
+            "ensureSchema": true,
+            "seedCollections": true,
             "${{ARG.namespace}}.data.record.mapper.collections()->collections": {
                 "#contract": "knexjs"
             },
@@ -233,9 +242,13 @@
                                 }
                             }
                         }
-                    }
+                    },
+                    "env": {},
+                    "service": {}
                 }
-            }
+            },
+            "$0.env.getConfig()->client/context/env": {},
+            "$0.services.getClientConfig()->client/context/service": {}
         }
     },
     "@session.express.fs": {
