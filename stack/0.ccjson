@@ -22,7 +22,12 @@
                 }
             },
             "$0.env.getConfig()->aspects/env/config": {},
-            "$0.services.getServerConfig()->aspects/service/config": {}
+            "$0.services.getServerConfig()->aspects/service/config": {},
+            "${{ARG.namespace}}.time.moment.getConfig()->aspects/time/config": {}
+        }
+    },
+    "@time.moment": {
+        "${{ARG.namespace}}.time.moment": {
         }
     },
     "@cache.fs": {
