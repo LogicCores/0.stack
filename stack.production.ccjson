@@ -21,6 +21,9 @@
         "responder.0.FireWidgets": {
             "alwaysRebuild": false
         },
+        "transform.marked": {
+            "alwaysRebuild": false
+        },
         "invite.cookie": {
             "forceInvited": false
         },

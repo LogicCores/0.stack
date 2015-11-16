@@ -180,6 +180,7 @@
         "${{ARG.namespace}}.transform.marked": {
             "${{ARG.namespace}}.context.server.api()->context": {},
             "${{ARG.namespace}}.static.fs.data.pages.path()->basePath": {},
+            "${{ARG.namespace}}.static.fs.data.pages.dist.path()->distPath": {},
             "${{ARG.namespace}}.skin.sm.hoist.VisualComponents.transformer()->postprocess/htm/components": {},
             "${{ARG.namespace}}.template.virtual-dom.transformer()->postprocess/htm/vdom-compile": {
                 "compile": {
