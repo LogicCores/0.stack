@@ -113,6 +113,10 @@
             },
             "client": {
                 "context": {
+                    "application": {
+                        "enableAuthentication": false,
+                        "waitForComponents": false
+                    },
                     "page": {
                         "path": "/"
                     }
