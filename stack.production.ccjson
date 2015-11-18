@@ -1,7 +1,8 @@
 {
     "@": {
         "export.browserify": {
-            "alwaysRebuild": false
+            "alwaysRebuild": false,
+            "clientCacheTTL": "15 mins"
         },
         "export.bower": {
             "alwaysRebuild": false

@@ -4,6 +4,10 @@
             "mode": "development"
         }
     },
+    "@service": {
+        "$0.services": {
+        }
+    },
     "@context": {
         "${{ARG.namespace}}.context.server": {
             "namespace": "${{ARG.namespace}}",
