@@ -55,6 +55,9 @@
         "${{ARG.namespace}}.static.fs.data.pages": {
             "basePath": "{{ARG.stackBasePath}}/Pages"
         },
+        "${{ARG.namespace}}.static.fs.data.pages.dist": {
+            "basePath": "{{ARG.stackBasePath}}/_exports/www/dist/pages"
+        },
         "${{ARG.namespace}}.static.fs.data.collections": {
             "basePath": "{{ARG.stackBasePath}}/Collections"
         },
@@ -110,6 +113,10 @@
             },
             "client": {
                 "context": {
+                    "application": {
+                        "enableAuthentication": false,
+                        "waitForComponents": false
+                    },
                     "page": {
                         "path": "/"
                     }

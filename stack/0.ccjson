@@ -26,7 +26,12 @@
                 }
             },
             "$0.env.getConfig()->aspects/env/config": {},
-            "$0.services.getServerConfig()->aspects/service/config": {}
+            "$0.services.getServerConfig()->aspects/service/config": {},
+            "${{ARG.namespace}}.time.moment.getConfig()->aspects/time/config": {}
+        }
+    },
+    "@time.moment": {
+        "${{ARG.namespace}}.time.moment": {
         }
     },
     "@cache.fs": {
@@ -179,6 +184,7 @@
         "${{ARG.namespace}}.transform.marked": {
             "${{ARG.namespace}}.context.server.api()->context": {},
             "${{ARG.namespace}}.static.fs.data.pages.path()->basePath": {},
+            "${{ARG.namespace}}.static.fs.data.pages.dist.path()->distPath": {},
             "${{ARG.namespace}}.skin.sm.hoist.VisualComponents.transformer()->postprocess/htm/components": {},
             "${{ARG.namespace}}.template.virtual-dom.transformer()->postprocess/htm/vdom-compile": {
                 "compile": {
@@ -221,7 +227,8 @@
     "@page.express": {
         "${{ARG.namespace}}.page.server": {
             "${{ARG.namespace}}.context.server.api()->context": {
-                "adapter": "page"
+                "adapter": "page",
+                "aspect": "page"
             },
             "${{ARG.namespace}}.static.fs.data.pages.path()->pages/basePath": {
             },
