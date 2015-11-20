@@ -163,6 +163,9 @@
     },
     "@static.send": {
         "${{ARG.namespace}}.static.send.semantic-ui": {
+            "${{ARG.namespace}}.static.fs.cache.path()->cachePath": {
+                "namespace": "send.semantic-u"
+            },
             "${{ARG.namespace}}.static.fs.www.path()->paths/www": {},
             "${{ARG.namespace}}.static.fs.skin.path()->paths/skin": {
                 "namespace": "{{ARG.skin}}"
@@ -221,7 +224,8 @@
             "sourceBaseSubUrl": "/cores/skin/for/sm.hoist.VisualComponents",
             "${{ARG.namespace}}.static.fs.skin.dist.path()->config/target/path": {
                 "namespace": "skin"
-            }
+            },
+            "${{ARG.namespace}}.static.fs.data.pages.dist.path()->distPath": {}
         }
     },
     "@page.express": {

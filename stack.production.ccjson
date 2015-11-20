@@ -16,11 +16,16 @@
             "alwaysRebuild": false,
             "clientCacheTTL": "12 hours"
         },
+        "export.sm.hoist.VisualComponents": {
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
+        },
         "responder.firewidgets": {
             "alwaysRebuild": false
         },
         "export.0.FireWidgets": {
-            "alwaysRebuild": false
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
         },
         "page.0.FireWidgets": {
             "alwaysRebuild": false
@@ -28,8 +33,12 @@
         "responder.0.FireWidgets": {
             "alwaysRebuild": false
         },
+        "static.send": {
+            "clientCacheTTL": "12 hours"
+        },
         "transform.marked": {
-            "alwaysRebuild": false
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
         },
         "invite.cookie": {
             "forceInvited": false
