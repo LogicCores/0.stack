@@ -5,10 +5,16 @@
             "clientCacheTTL": "12 hours"
         },
         "export.bower": {
-            "alwaysRebuild": false
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
         },
         "export.webpack": {
-            "alwaysRebuild": false
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
+        },
+        "data.ccjson.record.mapper": {
+            "alwaysRebuild": false,
+            "clientCacheTTL": "12 hours"
         },
         "responder.firewidgets": {
             "alwaysRebuild": false
