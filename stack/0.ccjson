@@ -258,7 +258,9 @@
                             }
                         }
                     },
-                    "env": {},
+                    "env": {
+                        "VERBOSE": "{{ENV.VERBOSE}}"
+                    },
                     "service": {}
                 }
             },
