@@ -415,7 +415,7 @@
         "${{ARG.namespace}}.routes.transform.marked": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^(/.*\\.md\\.htm)$",
+            "match": "^(/.*\\.md(:?\\.htm|\\.chscript\\.bundle\\.js))$",
             "${{ARG.namespace}}.transform.marked.app()->impl": {
                 "usePageContext": true
             }

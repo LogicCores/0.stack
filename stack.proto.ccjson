@@ -15,6 +15,9 @@
         ],
         "invite.cookie": {
             "forceInvited": true
+        },
+        "export.sm.hoist.VisualComponents": {
+            "clientCacheTTL": "0"
         }
     },
     "@0.pinf.genesis.Stack": {

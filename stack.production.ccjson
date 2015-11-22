@@ -17,8 +17,7 @@
             "clientCacheTTL": "12 hours"
         },
         "export.sm.hoist.VisualComponents": {
-            "alwaysRebuild": false,
-            "clientCacheTTL": "12 hours"
+            "alwaysRebuild": false
         },
         "responder.firewidgets": {
             "alwaysRebuild": false
