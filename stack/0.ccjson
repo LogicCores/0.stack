@@ -95,7 +95,7 @@
                 "connection": {
                     "ssl": true
                 },
-                "debug": true,
+                "debug": "{{ENV.VERBOSE}}",
                 "client": "pg"
             },
             "ensureSchema": true,
