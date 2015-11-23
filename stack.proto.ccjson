@@ -122,6 +122,12 @@
                     },
                     "page": {
                         "path": "/"
+                    },
+                    "skin": {
+                        "assetBuildRevision": "{{ENV.GIT_COMMIT_REV}}"
+                    },
+                    "component": {
+                        "loadBaseUri": "/{{ENV.GIT_COMMIT_REV}}/cores/export/0.FireWidgets"
                     }
                 }
             }

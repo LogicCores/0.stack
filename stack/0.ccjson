@@ -288,45 +288,45 @@
         "${{ARG.namespace}}.routes.proxy.smi.cache": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/proxy/for/smi.cache(/.+)$",
+            "match": "^/[^/]{7}/cores/proxy/for/smi.cache(/.+)$",
             "${{ARG.namespace}}.proxy.smi.cache.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.export": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/export(/.+)$"
+            "match": "^/[^/]{7}/cores/export(/.+)$"
         },
         "${{ARG.namespace}}.routes.export.babel": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/export/for/babel(/.+)$",
+            "match": "^/[^/]{7}/cores/export/for/babel(/.+)$",
             "${{ARG.namespace}}.export.babel.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.export.webpack.skin": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/export/for/webpack\\.skin(/.+)$",
+            "match": "^/[^/]{7}/cores/export/for/webpack\\.skin(/.+)$",
             "${{ARG.namespace}}.export.webpack.skin.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.export.bower": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/export/for/bower(/.+)$"
+            "match": "^/[^/]{7}/cores/export/for/bower(/.+)$"
         },
         "${{ARG.namespace}}.routes.export.browserify": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/export/for/browserify(/.+)$",
+            "match": "^/[^/]{7}/cores/export/for/browserify(/.+)$",
             "${{ARG.namespace}}.export.browserify.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.skin.semantic-ui": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/skin/for/semantic-ui(/.*)$",
+            "match": "^/[^/]{7}/cores/skin/for/semantic-ui(/.*)$",
             "${{ARG.namespace}}.skin.semantic-ui.app()->impl": {
             }
         },
@@ -338,7 +338,7 @@
         "${{ARG.namespace}}.routes.static.send.semantic-ui": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^(.+\\.(?:css|png|jpg|jpeg|ico|font|svg|woff|woff2|ttf))$",
+            "match": "^/[^/]{7}(/.+\\.(?:css|png|jpg|jpeg|ico|font|svg|woff|woff2|ttf))$",
             "${{ARG.namespace}}.static.send.semantic-ui.app()->impl": {
             }
         },
@@ -354,7 +354,7 @@
         "${{ARG.namespace}}.routes.data.record.collections": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
-            "match": "^/cores/data/for/record.collections/api.js$",
+            "match": "^/[^/]{7}/cores/data/for/record.collections/api.js$",
             "${{ARG.namespace}}.data.record.mapper.collectionsApiBundleApp()->impl": {}
         },
         "${{ARG.namespace}}.routes.auth.passport.routes": {
