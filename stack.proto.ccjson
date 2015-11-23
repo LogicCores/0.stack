@@ -121,7 +121,8 @@
                         "waitForComponents": false
                     },
                     "page": {
-                        "path": "/"
+                        "path": "/",
+                        "loadBaseUrl": "{{$./baseUrl}}/{{ENV.GIT_COMMIT_REV}}"
                     },
                     "skin": {
                         "assetBuildRevision": "{{ENV.GIT_COMMIT_REV}}"
