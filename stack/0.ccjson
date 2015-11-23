@@ -384,7 +384,7 @@
             "namespace": "{{ARG.namespace}}",
             "match": "^/",
             "methods": "*",
-            "$0.invite.cookie.app()->impl": {
+            "${{ARG.namespace}}.invite.cookie.app()->impl": {
             }
         },
         "${{ARG.namespace}}.routes.apis": {

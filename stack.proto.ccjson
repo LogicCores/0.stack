@@ -69,7 +69,7 @@
         }
     },
     "@invite.cookie": {
-        "$0.invite.cookie": {
+        "${{ARG.namespace}}.invite.cookie": {
     		"$0.profile.virtualcloud.hashForAspect()->token": {
     		    "aspect": "invite"
     		}

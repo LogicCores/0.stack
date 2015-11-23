@@ -15,7 +15,7 @@
             "name": "{{ENV.ENVIRONMENT_NAME}}",
             "type": "{{ENV.ENVIRONMENT_TYPE}}",
             "baseUrl": "http://{{ENV.ENVIRONMENT_NAME}}",
-            "$0.invite.cookie.getInfo()->inviteInfo": {}
+            "${{ARG.namespace}}.invite.cookie.getInfo()->inviteInfo": {}
         }
     },
     "@0.pinf.genesis.Profile": {
