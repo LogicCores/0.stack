@@ -26,6 +26,17 @@
             "invitePage": "/"
         }
     },
+    "@context": {
+        "${{ARG.namespace}}.context.server": {
+            "aspects": {
+                "data": {
+                    "config": {
+                        "assetBasePath": "{{ARG.stackBasePath}}/Data"
+                    }
+                }
+            }
+        }
+    },
     "@responder.server": {
         "$server": {
             "${{ARG.namespace}}.routes.routes()->routes{{ARG.stackIndex}}/{{ARG.namespace}}": {
@@ -122,7 +133,7 @@
                     },
                     "page": {
                         "path": "/",
-                        "loadBaseUrl": "{{$./baseUrl}}/{{ENV.GIT_COMMIT_REV}}"
+                        "loadBaseUrl": "{{ARG.subUri}}/{{ENV.GIT_COMMIT_REV}}"
                     },
                     "skin": {
                         "assetBuildRevision": "{{ENV.GIT_COMMIT_REV}}"

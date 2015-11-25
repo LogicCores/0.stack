@@ -204,7 +204,7 @@
     },
     "@export.webpack": {
         "${{ARG.namespace}}.export.webpack.skin": {
-            "subUri": "{{ARG.subUri}}",
+            "subUri": "{{ARG.subUri}}/{{ENV.GIT_COMMIT_REV}}",
             "${{ARG.namespace}}.static.fs.skin.path()->basePath": {
                 "namespace": "{{ARG.skin}}"
             },
@@ -245,7 +245,8 @@
             "client": {
                 "context": {
                     "page": {
-                        "baseUrl": "{{ARG.subUri}}"
+                        "baseUrl": "http://{{$0.host/host}}{{ARG.subUri}}",
+                        "subUri": "{{ARG.subUri}}"
                     },
                     "auth": {
                         "serverContext": {
