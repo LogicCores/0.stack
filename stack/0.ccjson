@@ -204,7 +204,8 @@
     },
     "@export.webpack": {
         "${{ARG.namespace}}.export.webpack.skin": {
-            "subUri": "{{ARG.subUri}}/{{ENV.GIT_COMMIT_REV}}",
+            "subUri": "{{ARG.subUri}}",
+            "publicPath": "/{{ENV.GIT_COMMIT_REV}}/",
             "${{ARG.namespace}}.static.fs.skin.path()->basePath": {
                 "namespace": "{{ARG.skin}}"
             },
