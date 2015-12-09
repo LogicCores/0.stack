@@ -294,6 +294,11 @@
             "${{ARG.namespace}}.proxy.smi.cache.app()->impl": {
             }
         },
+        "${{ARG.namespace}}.routes.test": {
+            "#": "register",
+            "namespace": "{{ARG.namespace}}",
+            "match": "^/[^/]{7}/cores/test(/.+)$"
+        },
         "${{ARG.namespace}}.routes.export": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
