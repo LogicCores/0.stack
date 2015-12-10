@@ -179,6 +179,7 @@
             },
             "routes": {
                 "travis-ci.org": "https://travis-ci.org",
+                "circleci.com": "https://circleci.com",
                 "badges.gitter.im": "https://badges.gitter.im"
             }
         }
