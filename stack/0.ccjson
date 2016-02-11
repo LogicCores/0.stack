@@ -300,6 +300,12 @@
             "namespace": "{{ARG.namespace}}",
             "match": "^/[^/]{7}/cores/test(/.+)$"
         },
+        "${{ARG.namespace}}.routes.component": {
+            "#": "register",
+            "namespace": "{{ARG.namespace}}",
+            "methods": "*",
+            "match": "^/[^/]{7}/cores/component(/.+)$"
+        },
         "${{ARG.namespace}}.routes.export": {
             "#": "register",
             "namespace": "{{ARG.namespace}}",
